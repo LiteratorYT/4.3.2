@@ -1,0 +1,12 @@
+{{! template.hbs }}
+<div class='container'>
+  {{#if isLoggedIn}}
+    <h1>Здравствуйте, {{username}}!</h1>
+    <button>Выйти</button>
+  {{else}}
+    <h1>Добро пожаловать!</h1>
+    <p>Пожалуйста, зарегистрируйтесь или войдите в систему.</p>
+    <button>Войти</button>
+    <button>Зарегистрироваться</button>
+  {{/if}}
+</div>
